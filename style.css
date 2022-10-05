@@ -11,7 +11,7 @@ ul{
     list-style: none;
 }
 
-p{
+#tituloMenu{
     display: inline-block;
     color: white;
     padding-top: 1.55rem;
@@ -28,9 +28,9 @@ p{
 
 nav{
     background-color:#0d1117;
-    position: absolute;
-    width: 350px;
-    height: 100%;
+    position: fixed;
+    width: 22rem;
+    height: 650rem;
 }
 
 ul{
@@ -39,19 +39,45 @@ ul{
     width: 100%;
 }
 
-a{
+.menu{
     text-decoration:none ;
     display: block;
     padding: 20px 5px;
     color: white; 
 }
 
-a:hover{
-    background-color: rgba(176, 224, 230);
+.menu:hover{
+    background-color: #f1f1ff;
     color: black;
 }
 
 label{
     padding: 15px;
     position: absolute;
+}
+
+#corpo{
+    position: absolute;
+    display: inline-block;
+    margin-left: 22rem;
+}
+
+h1{
+    margin-top: 1.55rem;
+    margin-left: 25rem;
+}
+
+.textoGeral{
+    display: inline-block;
+    margin-left: 25rem;
+    margin-top: 1.55rem;
+    font-size: 1.5rem;
+}
+
+.imgGeral{
+
+    display: inline-block;
+    margin-top: 1.55rem;
+    margin-left: 32rem;
+    width: 33rem;
 }
