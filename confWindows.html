@@ -1,104 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Ajudando com o GitHub</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
+
+<head>
+    <title>Ajudando com o GitHub</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
         <nav>
-                <p id="tituloMenu">TIPOS DE AJUDAS DISPONIVEIS</p>
-                <img src="./Imagens/LogoGitHub.png" id="logoMenu">
-                <ul>   
-                    <a href="index.html" class="menu"><li>Tela inicial</li></a>
-                    <a href="confWindows.html" class="menu"><li>Configurar para Windows</li></a>
-                    <a href="confLinux.html" class="menu"><li>Configurar para Linux</li></a>
-                    <a href="repositorio.html" class="menu"><li>Criar um repositorio</li></a>
-                    <a href="projeto.html" class="menu"><li>Upar um projeto</li></a>
-                    <a href="pages.html" class="menu"><li>Usar GitPages</li></a>
-                </ul>
-            </nav>
-        </header>
+            <p id="tituloMenu">TIPOS DE AJUDAS DISPONIVEIS</p>
+            <button>&#9776;</button>
+            <img src="./Imagens/LogoGitHub.png" id="logoMenu">
+            <ul>
+                <a href="index.html" class="menu">
+                    <li>Tela inicial</li>
+                </a>
+                <a href="confWindows.html" class="menu">
+                    <li>Configurar para Windows</li>
+                </a>
+                <a href="confLinux.html" class="menu">
+                    <li>Configurar para Linux</li>
+                </a>
+                <a href="repositorio.html" class="menu">
+                    <li>Criar um repositorio</li>
+                </a>
+                <a href="projeto.html" class="menu">
+                    <li>Upar um projeto</li>
+                </a>
+                <a href="pages.html" class="menu">
+                    <li>Usar GitPages</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
+    <main>
 
-            <h1>Git no Windows e GitHub: Como Instalar e Configurar</h1>
+        <h1>Git no Windows e GitHub: Como Instalar e Configurar</h1>
 
-            <p class="textoGeral">Neste post vou fazer um tutorial simples para utilizar o Git no Windows e comitar seus códigos no GitHub.</p>
+        <p class="textoGeral">Neste post vou fazer um tutorial simples para utilizar o Git no Windows e comitar seus
+            códigos no GitHub.</p>
 
-            <h1>1) Instalando o Git no Windows</h1>
+        <h1>1) Instalando o Git no Windows</h1>
 
-            <p class="textoGeral">No site oficial do Git <a href="http://git-scm.com/">(http://git-scm.com/)</a> clique em <b>“Downloads for Windows”</b>.</p>
+        <p class="textoGeral">No site oficial do Git <a href="http://git-scm.com/">(http://git-scm.com/)</a> clique em
+            <b>“Downloads for Windows”</b>.</p>
 
-            <img src="./Imagens/git-windows-1.webp" class="imgGeral">
+        <img src="./Imagens/Windows/git-windows-1.webp" class="imgGeral">
 
-            <P class="textoGeral">Execute o arquivo baixado e vá dando <b>“Next”</b> até a tela <b>“Select Components”</b>. Nesta tela eu escolho as opções como na imagem:</P>
+        <P class="textoGeral">Execute o arquivo baixado e vá dando <b>“Next”</b> até a tela <b>“Select Components”</b>.
+            Nesta tela eu escolho as opções como na imagem:</P>
 
-            <img src="./Imagens/git-windows-2.webp" class="imgGeral">
+        <img src="./Imagens/Windows/git-windows-2.webp" class="imgGeral">
 
-            <p class="textoGeral">
+        <p class="textoGeral">
 
-                Em especial eu marco as opções em <b>“Windows Explorer integration”</b>, assim eu consigo
-                abrir o prompt de comandos do Git (<a href="https://www.webdevdrops.com/git-bash-como-instalar-usar/">Git Bash</a>) em qualquer pasta, basta clicar com o
-                botão direito e <b>“Git Bash Here”</b>. A última opção também é interessante, porque ele instala 
-                uma fonte melhorzinha para o prompt de comandos.
+            Em especial eu marco as opções em <b>“Windows Explorer integration”</b>, assim eu consigo
+            abrir o prompt de comandos do Git (<a href="https://www.webdevdrops.com/git-bash-como-instalar-usar/">Git
+                Bash</a>) em qualquer pasta, basta clicar com o
+            botão direito e <b>“Git Bash Here”</b>. A última opção também é interessante, porque ele instala
+            uma fonte melhorzinha para o prompt de comandos.
 
-            </p>
+        </p>
 
-            <p class="textoGeral">
+        <p class="textoGeral">
 
-                <b>Nota:</b> O Git para Windows vem com um prompt de comandos próprio (o <a href="https://www.webdevdrops.com/git-bash-como-instalar-usar/">Git Bash</a>), que
-                além dos comandos git também fornece alguns comandos Unix que podem ser bem úteis 
-                (além de ser bem mais bonitinho que o prompt de comandos padrão do Windows).
-            </p>
+            <b>Nota:</b> O Git para Windows vem com um prompt de comandos próprio (o <a
+                href="https://www.webdevdrops.com/git-bash-como-instalar-usar/">Git Bash</a>), que
+            além dos comandos git também fornece alguns comandos Unix que podem ser bem úteis
+            (além de ser bem mais bonitinho que o prompt de comandos padrão do Windows).
+        </p>
 
-            <p class="textoGeral">
+        <p class="textoGeral">
 
-                Na próxima tela, eu escolho a opção: <b>“Use Git from the Windows Command Prompt”</b>.
-            
-            </p>
+            Na próxima tela, eu escolho a opção: <b>“Use Git from the Windows Command Prompt”</b>.
 
-            <img src="./Imagens/git-windows-3.webp" class="imgGeral">
+        </p>
 
-            <p class="textoGeral">
+        <img src="./Imagens/Windows/git-windows-3.webp" class="imgGeral">
+
+        <p class="textoGeral">
             Esta opção permite usar o comando git tanto no Git Bash quanto no terminal padrão do Windows.
-            </p>
+        </p>
 
-            <p class="textoGeral">
-            A terceira adiciona comandos do Unix no terminal do Windows, além do próprio comando 
-            git, mas alguns comandos do Windows serão substituídos por comandos Unix que tem o 
-            mesmo nome (como 
+        <p class="textoGeral">
+            A terceira adiciona comandos do Unix no terminal do Windows, além do próprio comando
+            git, mas alguns comandos do Windows serão substituídos por comandos Unix que tem o
+            mesmo nome (como
             find e sort).
-            </p>
-            
-            <p class="textoGeral">
+        </p>
+
+        <p class="textoGeral">
             Outra configuração importante: <b>quebra de linhas</b>.
-            </p>
-            
-            <img src="./Imagens/git-windows-4.webp" class="imgGeral">
+        </p>
 
-            <p class="textoGeral">
-            Como deve saber Windows e sistemas Unix (Linux, Mac) possuem formatos diferentes de quebra de linha em arquivos texto. Se você escreve um código com quebras de linha no formato Windows, outra pessoa pode ter problemas ao abrir o mesmo arquivo em um Linux, e vice-versa. Esta opção permite normalizar isso.
-            </p>
+        <img src="./Imagens/Windows/git-windows-4.webp" class="imgGeral">
 
-            <p class="textoGeral">
-            A primeira opção converte os arquivos para padrão Windows quando os arquivos chegam para você, e convertem para padrão Unix quando você os comita no repositório. A segunda não faz nenhuma conversão quando os arquivos chegam, mas convertem para padrão Unix quando você comita. Já a terceira opção não faz nenhuma conversão.
-            </p>
+        <p class="textoGeral">
+            Como deve saber Windows e sistemas Unix (Linux, Mac) possuem formatos diferentes de quebra de linha em
+            arquivos texto. Se você escreve um código com quebras de linha no formato Windows, outra pessoa pode ter
+            problemas ao abrir o mesmo arquivo em um Linux, e vice-versa. Esta opção permite normalizar isso.
+        </p>
 
-            <p class="textoGeral">
-            Eu opto pela segunda, pois prefiro manter tudo no padrão Unix (já que qualquer bom editor de código consegue ler arquivos no padrão Unix mesmo estando em Windows).
-            </p>
+        <p class="textoGeral">
+            A primeira opção converte os arquivos para padrão Windows quando os arquivos chegam para você, e convertem
+            para padrão Unix quando você os comita no repositório. A segunda não faz nenhuma conversão quando os
+            arquivos chegam, mas convertem para padrão Unix quando você comita. Já a terceira opção não faz nenhuma
+            conversão.
+        </p>
 
-            <p class="textoGeral">
+        <p class="textoGeral">
+            Eu opto pela segunda, pois prefiro manter tudo no padrão Unix (já que qualquer bom editor de código consegue
+            ler arquivos no padrão Unix mesmo estando em Windows).
+        </p>
+
+        <p class="textoGeral">
             Feito isso, <b>“Next”</b>, <b>“Finish”</b> e o Git está instalado.
-            </p>
+        </p>
 
-        </main>
+    </main>
 
-        <footer>
+    <footer>
 
-        </footer>
-        
-    </body>
+    </footer>
+
+</body>
+
 </html>

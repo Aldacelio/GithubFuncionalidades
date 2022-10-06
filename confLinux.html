@@ -1,25 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Ajudando com o GitHub</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
+
+<head>
+    <title>Ajudando com o GitHub</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
         <nav>
-                <p id="tituloMenu">TIPOS DE AJUDAS DISPONIVEIS</p>
-                <img src="./Imagens/LogoGitHub.png" id="riscoMenu">
-                <ul>   
-                    <li><a href="index.html" class="menu">Tela inicial</a></li>
-                    <li><a href="confWindows.html" class="menu">Configurar para Windows</a></li>
-                    <li><a href="confLinux.html" class="menu">Configurar para Linux</a></li>
-                    <li><a href="repositorio.html" class="menu">Criar um repositorio</a></li>
-                    <li><a href="projeto.html" class="menu">Upar um projeto</a></li>
-                    <li><a href="pages.html" class="menu">Usar GitPages</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-    </body>
+            <p id="tituloMenu">TIPOS DE AJUDAS DISPONIVEIS</p>
+            <button>
+                &#9776;
+            </button>
+            <img src="./Imagens/LogoGitHub.png" id="logoMenu">
+            <ul>
+                <a href="index.html" class="menu">
+                    <li>Tela inicial</li>
+                </a>
+                <a href="confWindows.html" class="menu">
+                    <li>Configurar para Windows</li>
+                </a>
+                <a href="confLinux.html" class="menu">
+                    <li>Configurar para Linux</li>
+                </a>
+                <a href="repositorio.html" class="menu">
+                    <li>Criar um repositorio</li>
+                </a>
+                <a href="projeto.html" class="menu">
+                    <li>Upar um projeto</li>
+                </a>
+                <a href="pages.html" class="menu">
+                    <li>Usar GitPages</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p class="textoGeral">
+            Criado em 2005 por Linus Torvalds, famoso por desenvolver o kernel Linux, o Git é um sistema
+            de controle de versão (VCS) moderno, gratuito e de código livre projetado para lidar com tudo,
+            desde projetos pequenos até os muito grandes, com velocidade e eficiência.
+        </p>
+
+        <p class="textoGeral">
+            Se você está migrando para o Linux e precisa utilizar o Git no seu dia a dia, faremos um tutorial
+            de instalação na sua distribuição e uso básico do Git das configurações iniciais até o seu
+            primeiro commit.
+        </p>
+
+        <h1>
+            Instalando o Git no Debian, Arch Linux, openSUSE e Fedora
+        </h1>
+
+        <p class="textoGeral">
+            Instalar o Git na sua distribuição Linux é bem simples, a maioria delas possui o Git em seus
+            repositórios oficiais.
+        </p>
+
+        <h1>
+            Instalando o Git no Debian / Ubuntu e distribuições derivadas
+        </h1>
+
+        <p class="textoGeral">
+            No Debian / Ubuntu e distribuições derivadas, você encontrará a versão estável mais recente
+            do Git nos repositórios oficiais, sendo assim, para instalá-lo é muito simples, basta seguir
+            os passos:
+        </p>
+        <p class="textoGeral">
+            1 – Sincronize o repositório com o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img1.PNG" class="imgLinux">
+
+
+        <p class="textoGeral">
+            2 – Feito isso, instale o Git rodando o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img2.PNG" class="imgLinux">
+
+        <h1>
+            Instalando o Git no Fedora
+        </h1>
+
+        <p class="textoGeral">
+            Para instalar o Git no Fedora, basta rodar os comandos:
+        </p>
+
+        <p class="textoGeral">
+            1 – Sincronize o repositório:
+        </p>
+
+        <img src="./Imagens/Linux/img3.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            2 – Instale o Git executando o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img4.PNG" class="imgLinux">
+
+        <h1>
+            Instalando o Git no Arch Linux e distribuições derivadas:
+        </h1>
+
+        <p class="textoGeral">
+            Se você utiliza o Arch Linux, Manjaro ou outras distribuições derivadas, basta seguir o passo
+            a passo para instalar o Git no seu sistema:
+        </p>
+
+        <p class="textoGeral">
+            1 – Atualize o sistema com o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img5.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Vale salientar que o Arch Linux não suporta atualizações parciais, sendo assim, é importante
+            evitar utilizar apenas o -Sy. Sempre atualize o sistema por completo com o comando “sudo pacman -Syu”
+            para evitar qualquer problema.
+        </p>
+
+        <p class="textoGeral">
+            2 – Após atualizar o sistema, instale o Git com o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img6.PNG" class="imgLinux">
+
+        <h1>
+            Instalando o Git no openSUSE
+        </h1>
+
+        <p class="textoGeral">
+            Se você precisa instalar o Git no openSUSE, rode os comandos:
+        </p>
+
+        <p class="textoGeral">
+            1 – Atualize os repositórios com o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img7.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            2 – Em seguida, instale o Git executando o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img8.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Para verificar se o Git foi instalado corretamente, independentemente da distro, rode o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img9.PNG" class="imgLinux">
+
+        <img src="./Imagens/Linux/img10.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Tudo certo, o Git já está instalado no seu respectivo sistema operacional, agora é só utilizá-lo
+            conforme a sua necessidade.
+        </p>
+
+        <h1>
+            Dicas para utilizar o Git no Linux
+        </h1>
+
+        <p class="textoGeral">
+            Se você está experimentando o Git pela primeira vez, iremos fazer um guia básico de utilização
+            do sistema de controle de versão para você começar a se familiarizar.
+        </p>
+
+        <p class="textoGeral">
+            Tudo pode ser feito através do seu emulador de terminal padrão. No nosso guia, utilizaremos o
+            terminal integrado do VS Code.
+        </p>
+
+        <h1>
+            Configuração inicial do Git
+        </h1>
+
+        <p class="textoGeral">
+            A primeira coisa que você deve fazer após instalar o Git é configurar seu nome de usuário e
+            endereço de e-mail. Isto é importante porque cada commit usa esta informação, e ela é carimbada
+            de forma imutável nos commits que você começa a criar:
+        </p>
+
+        <p class="textoGeral">
+            Para isso, abra o seu emulador de terminal e execute os comando:
+        </p>
+
+        <p class="textoGeral">
+            1 – Configure o seu nome de usuário:
+        </p>
+
+        <img src="./Imagens/Linux/img11.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            2 – Configure o seu endereço de email:
+        </p>
+
+        <img src="./Imagens/Linux/img12.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Vale ressaltar que você precisará fazer isso somente uma vez se tiver usado a opção –global,
+            porque assim o Git usará esta informação para qualquer coisa que você fizer no seu sistema.
+            Se você quiser substituir essa informação com um nome diferente para um projeto específico,
+            você pode rodar o comando sem a opção –global dentro daquele projeto.
+        </p>
+
+        <h1>
+            Configurando editor padrão
+        </h1>
+
+        <p class="textoGeral">
+            Agora que a sua identidade está configurada, você pode escolher o seu editor de texto padrão
+            o qual será chamado quando Git precisar que você insira alguma entrada. Se não for configurado,
+            o Git usará o editor padrão, que, normalmente, é o Vim. Se você quiser usar um editor de texto
+            diferente você pode rodar o seguinte comando:
+        </p>
+
+        <img src="./Imagens/Linux/img13.png" class="imgLinux">
+
+        <h1>
+            Conferindo as suas informações
+        </h1>
+
+        <p class="textoGeral">
+            Se você quiser conferir se configurou o Git certinho, você pode fazer isso rodando o comando:
+        </p>
+
+        <img src="./Imagens/Linux/img14.png" class="imgLinux">
+
+    </main>
+
+</body>
+
 </html>
