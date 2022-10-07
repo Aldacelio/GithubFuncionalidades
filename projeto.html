@@ -30,12 +30,140 @@
                 <a href="projeto.html" class="menu">
                     <li>Upar um projeto</li>
                 </a>
-                <a href="pages.html" class="menu">
-                    <li>Usar GitPages</li>
-                </a>
             </ul>
         </nav>
     </header>
+
+    <!-- Corpo da página -->
+    <main>
+        <h1>
+            Compartilhando no GitHub
+        </h1>
+
+        <p class="textoGeral">
+            Legal, você tem um repositório Git na sua máquina, mas que tal compartilhar seus
+            códigos no GitHub e usufruir de tudo que essa comunidade tem para oferecer?
+        </p>
+
+        <h1>
+            1) Preparação Inicial
+        </h1>
+
+        <p class="textoGeral">
+            Vá em <a href="https://github.com/">https://github.com/</a> e clique em “Sign Up” para criar sua conta gratuita.
+        </p>
+
+        <p class="textoGeral">
+            Tendo cadastrado e logado em sua conta, agora você precisa de uma <b>chave SSH</b> para poder 
+            começar a comitar. No Git Bash digite:
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-10.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Informe no comando seu e-mail cadastrado no <b>GitHub</b>. Dê Enter na próxima pergunta
+            (sobre o arquivo a ser criado — vamos deixar o padrão).
+        </p>
+
+        <p class="textoGeral">
+            A próxima pergunta vai te pedir uma senha (passphrase). Invente uma senha e a informe.
+            Ele vai pedir uma confirmação. Digite a senha novamente e Enter. Digite agora:
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-11.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            para abrir no Bloco de Notas o arquivo que foi criado.
+        </p>
+
+        <p class="textoGeral">
+            Agora no <b>GitHub</b>, vá em “<b>Settings</b>” e depois “<b>SSH and GPG Keys</b>”. Clique “<b>New SSH key</b>”. 
+            Informe um título para identificar o computador onde a a chave foi gerada e no campo “<b>Key</b>” 
+            cole todo o conteúdo do arquivo <b>id_rsa.pub</b> (que você abriu no Bloco de Notas)
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-12.webp" class="imgGeral">
+
+        <p class="textoGeral">
+            Tome cuidado de copiar e colar todo o conteúdo do arquivo, começando por “ssh-rsa …” 
+            até o seu e-mail (incluindo ele, como na imagem). Clique em “<b>Add Key</b>”.
+        </p>
+
+        <p class="textoGeral">
+            Vamos testar pra ver se essa bagaça deu certo. No Git Bash digite:
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-13.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Ele vai perguntar se você tem certeza que quer conectar bla bla bla (yes/no). Digite yes e 
+            Enter. Na próxima pergunta (Enter passphrase…) informe sua senha (a que você escolheu ao criar 
+            a chave SSH).
+        </p>
+
+        <p class="textoGeral">
+            Se você receber uma mensagem do tipo:
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-14.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Então deu tudo certo!
+        </p>
+
+        <h1>
+            2) Criando o primeiro repositório remoto
+        </h1>
+
+        <p class="textoGeral">
+            No <b>GitHub</b> vamos criar um novo repositório (botão “<b>New Repository</b>” no seu dashboard). 
+            Informe um nome sem espaços e caracteres especiais. As outras opções não precisa alterar.
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-15.webp" class="imgGeral">
+
+        <p class="textoGeral">
+            Você cairá na página do seu repositório, que por enquanto ainda não tem arquivos.
+        </p>
+
+        <p class="textoGeral">
+            <b>Importante!</b> Se o e-mail informado ao Git no início do <b>passo 2</b> não for o mesmo usado para 
+            se cadastrar no <b>GitHub</b>, refaça o comando informando o e-mail cadastrado. Assim o <b>GitHub</b> vai 
+            poder ligar os commits à sua conta.
+        </p>
+
+        <p class="textoGeral">
+            No Git Bash (na pasta do seu repositório local) digite:
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-16.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Note que <b>login/repositorio</b> deve ser digitado como aparece na URL do seu repositório, no exemplo:
+        </p>
+
+        <p class="textoGeral">
+            <a href="https://github.com/doug2k1/projeto-tutorial">https://github.com/doug2k1/projeto-tutorial</a>
+        </p>
+
+        <p class="textoGeral">
+            Agora para atualizar o <b>GitHub</b> com o que está no seu repositório local, digite:
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-17.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Informe a sua senha (da chave SSH) quando pedido.
+        </p>
+
+        <p class="textoGeral">
+            Recarregue a página do seu repositório e agora, ao invés da mensagem inicial, 
+            você verá seus commits e arquivos.
+        </p>
+        
+        <img src="./Imagens/Windows/git-windows-18.webp" class="imgGeral">
+
+    </main>
 
 </body>
 
