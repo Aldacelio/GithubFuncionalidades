@@ -1,3 +1,4 @@
+/*estilização gerais da página */
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +7,9 @@
 body {
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+/*estilização do menu*/
 
 button {
     display: none;
@@ -56,12 +60,18 @@ li {
     color: black;
 }
 
+
+/*estilização do conteudo principal da página*/
+
 main {
     position: absolute;
     display: inline-block;
     margin-left: 22rem;
     padding-bottom: 2rem;
 }
+
+
+/*estilização de textos e imagens do conteudo principal da página*/
 
 h1 {
     margin-top: 1.55rem;
@@ -93,6 +103,9 @@ h1 {
     width: 48.3rem;
 }
 
+
+/*funcionalidade para aparecer o menu*/
+
 button:focus~ul {
     display: block;
     background-color: #0d1117;
@@ -102,6 +115,9 @@ button:focus~ul {
 ul:hover {
     display: block;
 }
+
+
+/*Funcionalidades para deixar a página resposiva*/
 
 @media(max-width: 1270px) {
     #tituloMenu {
@@ -193,7 +209,14 @@ ul:hover {
     }
 }
 
+
+/*Dentro dessa @media eu altero meu menu*/
+
 @media (max-width: 848px) {
+
+    
+    /*mudando meu tipo de menu*/
+
     #tituloMenu {
         display: none;
     }
@@ -230,6 +253,8 @@ ul:hover {
         background-color: #f1f1ff;
         color: black;
     }
+
+    /*fim das mudanças do tipo de menu*/
 
     main {
         position: unset;

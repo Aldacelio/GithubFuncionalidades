@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <!-- Menu -->
     <header>
         <nav>
             <p id="tituloMenu">TIPOS DE AJUDAS DISPONIVEIS</p>
@@ -24,7 +25,7 @@
                     <li>Configurar para Linux</li>
                 </a>
                 <a href="repositorio.html" class="menu">
-                    <li>Criar um repositorio</li>
+                    <li>Criar um repositorio local</li>
                 </a>
                 <a href="projeto.html" class="menu">
                     <li>Upar um projeto</li>
@@ -35,6 +36,89 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Corpo da página -->
+    <main>
+
+        <h1>
+            WINDOWS: Criando um repositório Git local e comitando
+        </h1>
+
+        <p class="textoGeral">
+            Crie uma pasta, botão direito nela e “Git Bash Here”.
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-5.webp" class="imgGeral">
+
+        <p class="textoGeral">
+            Antes de mais nada, informe ao Git os seus dados, que irão identificar seus commits. 
+            Digite os comandos:
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-6.png" class="imgLinux">
+
+        <p class="textoGeral">
+            <b>Dica:</b> para copiar e colar comandos no Git Bash, clique com o botão direito na tela do terminal.
+        </p>
+        
+        <p class="textoGeral">
+            Agora vamos inicializar um repositório Git nesta pasta que estamos.
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-7.PNG" class="imgLinux">
+
+        <img src="./Imagens/Windows/git-windows-8.webp" class="imgGeral">
+
+        <p class="textoGeral">
+            Viu esse (master) que apareceu na linha de comando? Ele indica que você está em um repositório
+            Git, na branch master. Xique, hein?
+        </p>
+
+        <p class="textoGeral">
+            Vamos adicionar um arquivo neste repositório que está vazio e comitá-lo. Veja a sequência de 
+            comandos:
+        </p>
+
+        <img src="./Imagens/Windows/git-windows-9.png" class="imgLinux">
+
+        <p class="textoGeral">
+            Primeiro criamos um arquivo teste.txt vazio. Depois adicionamos todos os novos arquivos
+            (no caso só o teste.txt) ao índice do repositório, e por último comitamos todos os arquivos
+            que estão no índice e foram modificados.
+        </p>
+
+        <h1>
+            LINUX: Novo repositório: git init
+        </h1>
+
+        <p class="textoGeral">
+            Para criar um novo repositório, você vai usar o comando git init. git init é um comando
+            único que você usa durante a configuração inicial de um novo repositório. A execução desse
+            comando cria um novo subdiretório .git no diretório de trabalho atual. Essa ação também vai
+            criar uma ramificação principal.
+        </p>
+
+        <h1>
+            Controlando a versão de um projeto existente com um novo repositório git
+        </h1>
+
+        <p class="textoGeral">
+            Este exemplo pressupõe que você já tem uma pasta de projeto existente dentro da qual
+            gostaria de criar o repositório. Você primeiro fará cd à pasta raiz do projeto e depois
+            executará o comando git init.
+        </p>
+
+        <img src="./Imagens/Linux/img15.PNG" class="imgLinux">
+
+        <p class="textoGeral">
+            Apontar git init a um diretório de projeto existente executará a mesma configuração de 
+            inicialização mencionada acima, mas com escopo para este diretório de projeto.
+        </p>
+
+        <img src="./Imagens/Linux/img16.PNG" class="imgLinux">
+        
+
+    </main>
 
 </body>
 
